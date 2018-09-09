@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+<ul id="people"></ul>
+
+</body>
+</html>
+
+<script>
+var animals = ['Dog', 'Cat', 'Horse'];
+
+animals[3] = 'Cow';
+animals.push('Pig');
+
+
+var person = [];
+person['name'] = 'John Doe';
+person['age'] = 35;
+person['city'] = 'New York';
+
+var car = {make:'Ford', model:'Mustang', year:1964};
+
+console.log(car.make);
+
+//Objects
+var cars = [
+	{
+		make:'Ford',
+		model:'Mustang',
+		year:1964
+	},
+	{
+		make:'Chevy',
+		model:'Impala',
+		year:1978
+	},
+	{
+		make:'Toyota',
+		model:'Camry',
+		year:2015
+	};
+	console.log(cars[0].model);
+];
+
+
+	for (var i = 0; i < 10; i++) {
+			//Code
+			console.log(i);
+	}
+
+
+	var i = 0;
+
+	while(i < 10){
+		console.log(i);
+		i++
+	}
+
+
+	var people = ['Bob', 'Frank', 'Miley'];
+
+	for(var i < 0; i < people.length; i++;){
+		console.log(people[i]);
+	}
+
+	var people [
+
+	{
+		name:'Bob',
+		age:46
+	},
+
+	{
+		name:'Bob',
+		age:46
+	},
+
+	{
+		name:'Bob',
+		age:46
+	}
+
+	];
+
+	var output = '';
+
+	for(var i < 0; i < people.length; i++;){
+		document.getElementByid('people').innerHTML += '<li>'+people[i].name+'-'+people[i].age+'</li>';
+	}
+
+	var x = 10;
+	var y =15;
+
+	if(x < y){
+		console.log(x+' is less than '+y);
+	}else if(x == y){
+		console.log(x+' is equal to '+y);
+	}else{
+		console.log(x+' is more than '+y);
+
+	}
+
+
+	var name = 'Joe';
+
+	switch(name){
+		case 'Joe':
+		console.log('My name is Joe');
+		break;
+		case 'Jeff':
+		console.log('My name is Jeff');
+		break;
+		case 'Justin':
+		console.log('My name is justin');
+		break;
+		default:
+		console.log('My name is '+name);
+		break;
+	}
+
+</script>

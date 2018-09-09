@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions & Events</title>
+</head>
+<body onload="init()">
+	<button onclick="getDate()">Get Date</button>
+	<h1 id="showDate">Date</h1>
+
+	<form id="myForm">
+	<form onsubmit="submitForm()">
+		<div>
+			<label>Name</label>
+			<input type="text" id="name" onblur="test()">
+		</div>
+		<label>Email</label>
+		<input type="text" id="email" onfocus="test()">
+		<input type="submit" id="submit">
+	</form>
+
+<script>
+	
+	function sayHello(greeting, name = 'Jeff'){
+		alert(greeting+' '+name);
+	}
+
+	sayHello('Hello', 'Jane');
+
+
+	function getSum(a, b){
+		alert(a + b);
+	}
+
+	var sum = getSum(4, 5);
+	console.log(sum);
+
+
+	function getDate(){
+		var d = new Date();
+		//alert(d.getDate());
+		document.getElementById('showDate').innerHTML = d;
+	}
+
+	function submitForm(e){
+		e.preventDefault();
+		var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+
+		console.log(email);
+	}
+	function test(){
+		alert('Blur');
+	}
+
+
+	document.getElementById('myForm').addEventListener('submit', submitForm, false);
+
+	function init(){
+		console.log('Page Loaded');
+	}
+
+
+	//Events
+	/*onmouseover
+	onmouseout
+	ondblclick
+	
+	e eventParameter
+
+	preventDefault
+
+
+	onblur
+	onchange
+	onfocus
+	onselect
+	onsubmit
+	onreset
+	onkeydown
+	onkeyup
+	onkeypress
+
+	*/
+
+</script>
+
+
+</body>
+</html>
